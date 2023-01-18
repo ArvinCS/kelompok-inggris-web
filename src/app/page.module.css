@@ -19,24 +19,18 @@
   font-family: var(--font-mono);
 }
 
-.test {
+.title_section {
   min-width: 100vw;
   height: 100vh;
   max-height: 100vh;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .overlay {
   min-width: 100%;
   min-height: 100%;
   filter: brightness(70%);
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  /* background-repeat: no-repeat; */
-  background-size: cover;
   object-position: center;
-  /* object-fit: cover; */
 }
 
 .centered {

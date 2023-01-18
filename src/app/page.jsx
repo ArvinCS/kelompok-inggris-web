@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.test}>
+      <div className={styles.title_section}>
         
         <video
           autoPlay
