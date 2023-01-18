@@ -1,0 +1,55 @@
+
+.navbar {
+    min-width: 100vw;
+    height: 5vh;
+    overflow: hidden;
+    top: 1px;
+    position: absolute;
+    color: white;
+    background-color: black;
+}
+
+.buttonbar {
+    font-size: 20px;
+    height: 100%;
+    align-items: center;
+    padding: 0px 20px;
+    float: right;
+    width: auto;
+    display: inline-flex;
+    position: relative;
+}
+
+.underline::before, .underline::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 0%;
+    height: 1px;
+    bottom: 0%;
+    /* left: 0%; */
+    margin-bottom: 5px;
+    background: white;
+}
+
+.underline::before {
+    left: -0.5px;
+}
+
+.underline::after {
+    right: 0.5px;
+    background: white;
+    transition: width 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.underline:hover::before {
+    background: white;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.underline:hover::after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
