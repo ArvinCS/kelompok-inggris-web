@@ -42,7 +42,8 @@
 
 .titletext {
   font-weight: 600;
-  font-size: 400%;
+  /* font-size: 400%; */
+  font-size: 4vw;
   color: white;
   animation: fadeIn 2s;
   margin: auto;
@@ -50,8 +51,9 @@
 }
 
 .subtitletext {
-  font-weight: 400;
-  font-size: 100%;
+  /* font-weight: 100; */
+  /* font-size: 100%; */
+  font-size: max(70%, 1vw);
   color: white;
   animation: fadeIn 2s;
   margin: auto;
@@ -300,6 +302,7 @@
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
+
 
 @keyframes rotate {
   from {
