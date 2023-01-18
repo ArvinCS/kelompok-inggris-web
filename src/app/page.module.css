@@ -3,8 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  /* padding: 6rem; */
   min-height: 100vh;
+  height: 100%;
 }
 
 .description {
@@ -16,6 +17,41 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+}
+
+.test {
+  min-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+.overlay {
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(70%);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  object-position: center;
+  /* object-fit: cover; */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titletext {
+  font-weight: 600;
+  font-size: 400%;
+  color: white;
+  animation: fadeIn 2s;
+  /* margin-bottom: 0.7rem; */
 }
 
 .description a {
@@ -268,4 +304,9 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
