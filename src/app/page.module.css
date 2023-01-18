@@ -45,7 +45,17 @@
   font-size: 400%;
   color: white;
   animation: fadeIn 2s;
-  /* margin-bottom: 0.7rem; */
+  margin: auto;
+  text-align: center;
+}
+
+.subtitletext {
+  font-weight: 400;
+  font-size: 100%;
+  color: white;
+  animation: fadeIn 2s;
+  margin: auto;
+  text-align: center;
 }
 
 .description a {

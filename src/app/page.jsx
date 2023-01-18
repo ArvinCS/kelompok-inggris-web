@@ -11,20 +11,17 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.title_section}>
-        
         <video
           autoPlay
           loop
           muted
           className={styles.overlay}
-          // height={1196}
-          // width={10}
         >
           <source src='/video.mp4' type='video/mp4'/>
-                {/* <source {...{sourceProps}}> */}
         </video>
         <fade className={styles.centered} duration='10000'>
           <p className={styles.titletext}>Kelompok Inggris</p>
+          <p className={styles.subtitletext}>Consists of not just anyone, but extraordinary people</p>
         </fade>
       </div>
     </main>
