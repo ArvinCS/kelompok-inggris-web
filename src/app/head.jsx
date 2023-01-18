@@ -3,7 +3,7 @@ export default function Head() {
     <>
       <title>Kelompok Inggris</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="Consists of not just anyone, but strong people." />
+      <meta name="description" content="Consists of not just anyone, but extraordinary people." />
       <link rel="icon" href="/favicon.ico" />
     </>
   )
