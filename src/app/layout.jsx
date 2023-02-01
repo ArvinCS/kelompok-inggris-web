@@ -88,22 +88,23 @@ export default function RootLayout({ children }) {
             <div style={{
               'display': isOverflowing ? 'flex' : 'inline-flex',
               'float': 'left',
-              'alignItems': 'center',
+              'padding': '0px 10px',
+              'justifyContent': 'center',
             }}>
               <h1 style={{
+                'fontFamily': 'ClashDisplay-Semibold',
                 'font-size': '20px',
                 'height': '5vh',
+                'display': 'flex',
                 'alignItems': 'center',
-                'padding': '0px 10px',
-                'display': 'inline-flex',
-                'fontFamily': 'ClashDisplay-Semibold',
               }}>Kelompok Inggris</h1>
               {isOverflowing ? <a href="javascript:void(0);" onClick={onExpand} style={{
                 'height': '5vh',
                 'alignItems': 'center', 
                 'display': 'flex',
+                'position': 'absolute',
                 'padding': '0px 10px',
-                'marginLeft': isOverflowing ? 'auto' : '0',
+                'right': '0%',
               }}>
                 <i class="fa fa-bars" style={{
                   'alignItems': 'center'
