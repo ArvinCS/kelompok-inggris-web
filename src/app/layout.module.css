@@ -1,23 +1,31 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .navbar {
     min-width: 100vw;
-    height: 5vh;
+    max-height: 5vh;
     overflow: hidden;
     top: 1px;
     position: absolute;
     color: white;
     background-color: black;
+    /* display: inline-flex; */
+    /* flex-flow: row nowrap; */
+    transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s
 }
 
 .buttonbar {
     font-size: 20px;
-    height: 100%;
+    height: 5vh;
     align-items: center;
     padding: 0px 20px;
     float: right;
     width: auto;
     display: inline-flex;
     position: relative;
+}
+
+.underline {
+    font-family: 'ClashDisplay-Light';
 }
 
 .underline::before, .underline::after {
