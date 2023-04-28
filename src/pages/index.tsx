@@ -46,9 +46,18 @@ export default function Home() {
     >
       <div id='About' className='flex h-screen w-full bg-green-50 justify-between'>
         <div className='z-10 flex flex-row absolute items-center h-[40px] w-full bg-black justify-between px-4'>
-          <h2 className='flex my-auto font-clashdisplay font-bold object-contain h-auto overflow-hidden'>
-            Kelompok Inggris
-          </h2>
+          <div>
+            <div className='relative aspect-square w-[45px] md:w-0'>
+              <Image
+                src={'/images/KPI_LOGO-01.png'}
+                alt={''}
+                fill={true}
+              />
+            </div>
+            <h2 className='w-0 md:w-auto h-0 md:h-auto overflow-hidden flex my-auto font-clashdisplay font-bold object-contain'>
+              Kelompok Inggris
+            </h2>
+          </div>
           <div className='flex flex-row space-x-4 overflow-hidden items-center'>
             {/* <Link href='#About' className='items-center'>
               <HomeIcon className='fill-white w-[20px] h-auto md:h-0 md:w-0'/>
