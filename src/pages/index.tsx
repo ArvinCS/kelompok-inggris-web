@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-
+import { HomeIcon, PhotoIcon, UserIcon } from '@heroicons/react/24/solid'
 const inter = Inter({ subsets: ['latin'] })
 
 import localFont from "next/font/local"
+import Link from 'next/link'
 
 const memberData = [
   {
@@ -108,21 +109,30 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between ${clashDisplay.variable} font-clashdisplay`}
     >
-      <div className='flex h-screen w-full bg-green-50 justify-between'>
+      <div id='About' className='flex h-screen w-full bg-green-50 justify-between'>
         <div className='z-10 flex flex-row absolute items-center h-[40px] w-full bg-black justify-between px-4'>
-          <h2 className='flex my-auto font-clashdisplay font-bold'>
+          <h2 className='flex my-auto font-clashdisplay font-bold object-contain h-auto overflow-hidden'>
             Kelompok Inggris
           </h2>
-          <div className='flex flex-row space-x-4'>
-            <h2>  
-              About Us
-            </h2>
-            <h2>  
-              Members
-            </h2>
-            <h2>  
-              Memories
-            </h2>
+          <div className='flex flex-row space-x-4 overflow-hidden items-center'>
+            {/* <Link href='#About' className='items-center'>
+              <HomeIcon className='fill-white w-[20px] h-auto md:h-0 md:w-0'/>
+              <h2 className='invisible md:visible h-0 md:h-auto w-0 md:w-auto'>  
+                About Us
+              </h2>
+            </Link> */}
+            <Link href='#MemberList' scroll={true} className='items-center'>
+              <UserIcon className='fill-white w-[20px] h-auto md:h-0 md:w-0'/>
+              <h2 className='invisible md:visible h-0 md:h-auto w-0 md:w-auto'>  
+                Members
+              </h2>
+            </Link>
+            <div className='items-center'>
+              <PhotoIcon className='fill-white w-[20px] h-auto md:h-0 md:w-0'/>
+              <h2 className='invisible md:visible h-0 md:h-auto w-0 md:w-auto'>  
+                Memories
+              </h2>
+            </div>
           </div>
         </div>
         <div className='flex absolute z-0 min-w-full min-h-full bg-blue-800 overflow-hidden'>
@@ -172,19 +182,23 @@ export const MemberPage = () => {
 } 
 
 export const MemberTile = ({name, photoUrl} : {name: string, photoUrl: string}) => {
-  return (
+  return (  
     <>
       <div className="flex flex-col relative m-5 justify-center place-items-center">
-        <div className='relative aspect-[9/16] items-center w-3/4 md:w-2/3'>
+        <div className='group relative aspect-[9/16] items-center w-3/4 md:w-2/3 rounded-2xl overflow-hidden'>
+          <div className='absolute z-10 duration-500 place-items-end ease-in-out group-hover:h-full h-0 w-full bg-white overflow-hidden items-center'>
+            <p className='text-black'>
+              test
+            </p>
+          </div>
           <Image 
             src={photoUrl}
             alt={''}
-            className='rounded-2xl'
             fill={true}
             priority={true}
           />
         </div>
-        <div className="relative text-white font-bold bg-black px-[2px] py-[10px]">
+        <div className="relative text-white font-bold bg-black px-[2px] py-[10px] text-center">
           {name}
           {/* <p style={{
             'color': 'white',
