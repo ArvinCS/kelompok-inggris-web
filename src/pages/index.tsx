@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google'
 import { HomeIcon, PhotoIcon, UserIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
+
 const inter = Inter({ subsets: ['latin'] })
 
 import localFont from "next/font/local"
@@ -78,11 +80,11 @@ export default function Home() {
             <source src='/video.mp4' type='video/mp4'/>
           </video>
         </div>
-        <div className='flex m-auto items-center flex-col'>
-          <h2 className='z-20 text-[4vw] font-medium'>
+        <div className='flex flex-col relative m-auto items-center overflow-hidden'>
+          <h2 className='relative text-[4vw] font-medium'>
             Kelompok Inggris
           </h2>
-          <h2 className='z-20 text-[10px] md:text-[16px]'>
+          <h2 className='relative text-[10px] md:text-[16px]'>
             Consists of not just anyone, but extraordinary people
           </h2>
         </div>

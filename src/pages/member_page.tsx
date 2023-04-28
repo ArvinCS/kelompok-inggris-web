@@ -54,12 +54,12 @@ const memberData = [
     {
         id: 8,
         title: "Abel Timothy Leonard",
-        image: "/images/placeholder.jpg"
+        image: "/images/KPI_LOGO-01.png"
     },
     {
         id: 10,
         title: "Valentino",
-        image: "/images/placeholder.jpg"
+        image: "/images/KPI_LOGO-01.png"
     },
     {
         id: 11,
@@ -98,7 +98,7 @@ export const MemberTile = ({name, photoUrl} : {name: string, photoUrl: string}) 
             </div>
             <Image 
               src={photoUrl}
-              alt={''}
+              alt={'/images/KPI_LOGO-02.png'}
               fill={true}
               priority={true}
             />
