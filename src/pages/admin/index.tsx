@@ -39,7 +39,6 @@ export default function Home() {
     }
 
     if (password.length >= 8) {
-        
         if (email != 'admin@kpi.org' || password != 'kpiareus') {
             toast.info("Make sure your email and password are valid!", {
             position: "top-center",
