@@ -54,7 +54,7 @@ const memberData = [
   {
     id: 9,
     title: "Joan Justian",
-    image: "/images/joan.jpg"
+    image: "/images/joan.JPG"
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const memberData = [
   {
     id: 11,
     title: "Steven Bryan",
-    image: "/images/placeholder.jpg"
+    image: "/images/betet.JPG"
   },
 ];
 
