@@ -60,12 +60,12 @@ export default function Home() {
                 Members
               </h2>
             </Link>
-            <div className='items-center'>
+            <Link href='#Memories' className='items-center'>
               <PhotoIcon className='fill-white w-[20px] h-auto md:h-0 md:w-0'/>
               <h2 className='invisible md:visible h-0 md:h-auto w-0 md:w-auto'>  
                 Memories
               </h2>
-            </div>
+            </Link>
           </div>
         </div>
         <div className='flex absolute z-0 min-w-full min-h-full bg-blue-800 overflow-hidden'>
