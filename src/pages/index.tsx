@@ -166,7 +166,7 @@ export const MemberPage = () => {
   return (
     <div id="MemberList" className='flex items-center flex-col relative h-screen w-full bg-black justify-between'>
       <p className="font-bold text-4xl h-auto p-5">Our Members</p>
-      <div className="grid grid-cols-2 md:grid-cols-3 relative h-full w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 relative h-full w-full">
         {
           memberData.map(item => (
             <MemberTile
